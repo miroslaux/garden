@@ -1,34 +1,39 @@
 
-| [[ft_strlen]]  | ```size_t strlen(const char s);```                         |
-| :------------- | :--------------------------------------------------------- |
-| [[ft_memcpy]]  | ```void *memcpy(void *dest, const void *src, size_t n);``` |
-| [[ft_memset]]  | ```void *memset(void *s, int c, size_t n);```              |
-| [[ft_bzero]]   | ```void bzero(void *s, size_t n);```                       |
-| [[ft_memmove]] | Copies memory area (safe for overlapping regions)          |
-| [[ft_memcmp]]  | Compares memory areas                                      |
-| [[ft_memchr]]  | Scans memory for a character                               |
-
-| [[ft_isalpha]] | Checks for an alphabetic character.                   |
-| :------------- | :---------------------------------------------------- |
-| [[ft_isdigit]] | Checks for a digit (0 through 9).                     |
-| [[ft_isalnum]] | Checks for an alphanumeric character.                 |
-| [[ft_isascii]] | Checks whether `c` fits into the ASCII character set. |
-| [[ft_isprint]] | Checks for any printable character.                   |
-
-| [[ft_toupper]] | Converts a lower-case letter to upper case.                       |
+|                |                                                                   |
 | :------------- | :---------------------------------------------------------------- |
-| [[ft_tolower]] | Converts an upper-case letter to lower case.                      |
-| [[ft_strchr]]  | Locates the first occurrence of a character in a string[cite: 1]. |
-| [[ft_strrchr]] | Locates the last occurrence of a character in a string[cite: 1].  |
+| [[ft_strlen]]  | ```size_t strlen(const char s);```                                |
+| [[ft_memcpy]]  | ```void *memcpy(void *dest, const void *src, size_t n);```        |
+| [[ft_memset]]  | ```void *memset(void *s, int c, size_t n);```                     |
+| [[ft_bzero]]   | ```void bzero(void *s, size_t n);```                              |
+| [[ft_memmove]] | ```void *ft_memmove(void *dest, const void *src, size_t n);```    |
+| [[ft_memcmp]]  | ```size_t ft_memcmp(const void *s1, const void *s2, size_t n);``` |
+| [[ft_memchr]]  | ```void *ft_memchr(const void *s, int c, size_t n);```            |
 
-| [[ft_strlcat]] | Size-bounded string concatenation[cite: 1].                                   |
-| :------------- | :---------------------------------------------------------------------------- |
-| [[ft_strlcpy]] | Size-bounded string copying[cite: 1].                                         |
-| [[ft_atoi]]    | Converts a string to an integer[cite: 1].                                     |
-| [[ft_strnstr]] | Locates a substring in a string, searching at most `len` characters[cite: 1]. |
-| [[ft_strncmp]] | Compares two strings up to `n` characters[cite: 1].                           |
-| [[ft_calloc]]  | Allocates memory and initializes it to zero                                   |
-| [[ft_strdup]]  | Creates a duplicate of a string                                               |
+
+|                |                              |
+| :------------- | :--------------------------- |
+| [[ft_isalpha]] | ```int ft_isalpha(int c);``` |
+| [[ft_isdigit]] | ```int ft_isdigit(int c);``` |
+| [[ft_isalnum]] | ```int ft_isalnum(int c);``` |
+| [[ft_isascii]] | ```int ft_isascii(int c);``` |
+| [[ft_isprint]] | ```int ft_isprint(int c);``` |
+
+|                |                                               |
+| :------------- | :-------------------------------------------- |
+| [[ft_toupper]] | ```int ft_toupper(int c);```                  |
+| [[ft_tolower]] | ```int ft_tolower(int c);```                  |
+| [[ft_strchr]]  | ```char *ft_strchr(const char *s, int c);```  |
+| [[ft_strrchr]] | ```char *ft_strrchr(const char *s, int c);``` |
+
+|                |                                                                          |
+| :------------- | :----------------------------------------------------------------------- |
+| [[ft_strlcat]] | ```size_t ft_strlcat(char *dst, const char *src, size_t size);```        |
+| [[ft_strlcpy]] | ```size_t ft_strlcpy(char *dst, const char *src, size_t size);```        |
+| [[ft_atoi]]    | ```int ft_atoi(const char *nptr);```                                     |
+| [[ft_strnstr]] | ```char *ft_strnstr(const char *big, const char *little, size_t len);``` |
+| [[ft_strncmp]] | ```int ft_strncmp(const char *s1, const char *s2, size_t n);```          |
+| [[ft_calloc]]  | ```void *ft_calloc(size_t n, size_t size);```                            |
+| [[ft_strdup]]  | ```char *ft_strdup(const char *s);```                                    |
 
 | [[ft_substr]]   | Extracts a substring from a string[cite: 1].                                      |
 | :-------------- | :-------------------------------------------------------------------------------- |
