@@ -1,4 +1,3 @@
-PROTOTYPING:
 ```
 #include <string.h>
 size_t strlcat(char *dst, const char *src, size_t size);
@@ -17,3 +16,7 @@ Both [[strlcpy()]] and [[strlcat()]] functions return the total length of the st
 truncation detection simple. Note, however, that if [[strlcat()]] traverses size characters without finding a NUL, the length of the string is considered to be size and the destination string will not be NUL-terminated (since there was no space for the NUL). This keeps [[strlcat()]] from running off the end of a string. In practice this should not happen (as it means that either size is incorrect or that dst is not a proper "C" string). The check exists to prevent potential security problems in incorrect code.
 
 #concatenate #string #libft
+
+```NOTES 
+
+``` 
