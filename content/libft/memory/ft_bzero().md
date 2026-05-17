@@ -1,5 +1,5 @@
 ```
-#include <strings.h.>
+#include <strings.h>
 void bzero(void *s, size_t n);
 ```
 DESCRIPTION:
@@ -8,7 +8,7 @@ DESCRIPTION:
 RETURN VALUE:
 	None.
 
-#setting #zero #memory #libft
+#setting #zero #memory #strings #libft
 
 ```NOTES 
 // Why we are able to ignore return value of memset ?

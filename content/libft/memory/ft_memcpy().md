@@ -8,7 +8,7 @@ DESCRIPTION:
 RETURN VALUE:
 	The memcpy() function returns a pointer to dest.
 
-#memory #copy #libft
+#memory #copy #string  #libft
 
 ```NOTES 
 overlap example: 

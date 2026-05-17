@@ -7,10 +7,10 @@ DESCRIPTION:
 RETURN VALUE:
 The string representing the integer. NULL if the allocation fails.
 
-#conversion #character #libft
+#conversion #character #malloc #libft_f #libft 
 
 ```NOTES 
-
+something similar with putnbr
 ``` 
 
 ```EDGE_CASES

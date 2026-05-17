@@ -8,7 +8,7 @@ DESCRIPTION:
 RETURN VALUE:
 	Returns pointer to modified piece of memory. 
 
-#setting #memory #libft
+#setting #memory #string #libft
 
 ```NOTES 
 // Cast the void pointer to an unsigned char pointer to work byte-by-byte

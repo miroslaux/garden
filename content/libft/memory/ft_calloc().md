@@ -11,7 +11,7 @@ DESCRIPTION:
 RETURN VALUE:
 	Return a pointer to the allocated memory, which is suitably aligned for any type that fits into the requested size or less. On error, these functions return NULL. 
 
-#setting #memory #libft
+#setting #memory #malloc #stdlib  #libft
 
 ```NOTES 
 //Prevent integer overflow during multiplication

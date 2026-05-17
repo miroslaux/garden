@@ -8,7 +8,7 @@ DESCRIPTION:
 RETURN VALUE:
 	Return a pointer to the matching byte or NULL if the character does not occur in the given memory area.
 
-#memory #scanning #libft
+#memory #scanning #string #libft
 
 ```NOTES 
 // Typecast staff
