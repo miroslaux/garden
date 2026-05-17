@@ -3,9 +3,11 @@
 void *memset(void *s, int c, size_t n);
 ```
 DESCRIPTION:	
+
 `The memset() function fills the first n bytes of the memory area pointed to by s with the constant byte c.`
 
 RETURN VALUE:
+
 Returns pointer to modified piece of memory. 
 
 #setting #memory #libft
