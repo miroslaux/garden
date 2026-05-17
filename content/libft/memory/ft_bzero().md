@@ -17,16 +17,19 @@ and safely discards the pointer memset returns.
 ``` 
 
 ```EDGE_CASES
+// normal
+char buffer[5] = "Hello";
+bzero(buffer, 5); //  buffer[5] = "00000"
+
 // n == 0
-char buffer[10] = "Hello";
-bzero(buffer, 0); 
+bzero(buffer, 0); // buffer[5] = "Hello"
 
 // offset value 
-char array[10] = "123456789";
+char array[10] = "123456789"; // array[10] = "123450009" 
 bzero(array + 5, 3);
 
 // uninitialized, just allocated memory
-char *ptr = malloc(100);
+char *ptr = malloc(100); // *ptr = "0000000000...00" // [100] zero's
 bzero(ptr, 100);
 ```
 SRC: https://github.com/bminor/glibc/blob/master/string/bzero.c

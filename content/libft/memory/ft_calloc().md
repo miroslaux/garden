@@ -21,10 +21,15 @@ RETURN VALUE:
 ``` 
 
 ```EDGE_CASES
+// normal
+calloc(10, sizeof(char)) // Returns a valid unique pointer  
+
 // count == 0 or size == 0
+void *ptr1 = ft_calloc(0, 10); // Returns a valid unique pointer    
+void *ptr2 = ft_calloc(5, 0);  // Returns a valid unique pointer
 
 // integer overflow 
-If `count * size` exceeds the maximum value of `size_t` - it will return NULL. 
+ft_calloc(SIZE_MAX, 2) // Multiplication overflows size_t. Safe check returns NULL.
 ```
 SRC: https://github.com/gcc-mirror/gcc/blob/master/libiberty/calloc.c
 

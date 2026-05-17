@@ -18,15 +18,19 @@ RETURN VALUE:
 ``` 
 
 ```EDGE_CASES
+char *s = GROWER;
 // n == 0
-will return NULL
+memchr(s, 69, 0); // will return NULL
+
 // c == '\0'
-will return its memory address if it falls within the $n$ limit
-// Values outside the 0-255 for `int c` range are truncated 
-will be casted to unsigned char == (0-255)
+memchr(s, '\0', 10); // will return its memory address if it falls within the n limit
+
+// Values outside the 0-255 for `int c` 
+memchr(s, 256, 10); // range are truncated, so in result 256 will be converted to 1 and `c` will be searched as ASCII 1 value.   
+
 // Target found beyond n bound 
-will return NULL
+memchr(s, 69, 3); // will return NULL 
 ```
-SRC: https://github.com/lattera/glibc/blob/master/string/memchr.c
+SRC: https://github.com/libressl/openbsd/blob/master/src/lib/libc/string/memchr.c
 
 MAN: https://man.archlinux.org/man/memchr.3

@@ -12,29 +12,27 @@ RETURN VALUE:
 
 ```NOTES 
 overlap example: 
-memcpy(p+1, p, 42); - undefined behaviour. 
-memmove()
+memcpy(p+1, p, 42); - undefined behaviour.
 ``` 
 
 ```EDGE_CASES
 // copying src to dest when it's the same 
 char buffer[10] = "0123456789";
-memcpy(buffer, buffer, 10)
+memcpy(buffer, buffer, 10) // will return pointer to same string
 
 // n == 0
-memcpy(dest, src, 0)
+memcpy(dest, src, 0) // will return dest
 
 // Allocated, but contains random garbage
 char *src = malloc(10);  
 char dest[10];
-memcpy(dest, src, 10);
+memcpy(dest, src, 10); // will return pointer to string with garbage
 
 // Shift data forward
 char *src = &buffer[3];  // "3456789"
 char *dest = &buffer[0]; // "0123..."
-memcpy(dest, src, 5); 
-
+memcpy(dest, src, 5); // result will be "3456786789"
 ```
-SRC: https://github.com/lattera/glibc/blob/master/string/memcpy.c
+SRC: https://github.com/gcc-mirror/gcc/blob/master/libgcc/memcpy.c
 
 MAN: https://man.archlinux.org/man/core/man-pages/memcpy.3.en

@@ -3,10 +3,10 @@
 void *memrchr(const void *s, int c, size_t n);
 ```
 DESCRIPTION:	
-`The memrchr() function is like the memchr() function, except that it searches backward from the end of the n bytes pointed to by s instead of forward from the beginning.`
+	`The memrchr() function is like the memchr() function, except that it searches backward from the end of the n bytes pointed to by s instead of forward from the beginning.`
 
 RETURN VALUE:
-Returns a pointer to the matching byte or NULL if the character does not occur in the given memory area. 
+	Returns a pointer to the matching byte or NULL if the character does not occur in the given memory area. 
 
 #memory #scanning #libft
 
@@ -27,5 +27,6 @@ will be casted to unsigned char == (0-255)
 // Target found beyond n bound 
 will return NULL
 ```
-SRC: https://github.com/lattera/glibc/blob/master/string/memrchr.c
+SRC: https://github.com/gcc-mirror/gcc/blob/master/libiberty/memchr.c
+
 MAN: https://man.archlinux.org/man/memrchr.3

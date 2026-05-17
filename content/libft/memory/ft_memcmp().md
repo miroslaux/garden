@@ -17,17 +17,17 @@ returning difference or 0 if it's equal
 
 ```EDGE_CASES
 //  n == 0
-memcmp(s1, s2, 0);
+memcmp(s1, s2, 0); // will return 0
 
 // signed vs unsigned 
-char s1[] = {0xFF}; // -1 if signed
-char s2[] = {0x01}; //  1 if signed
-ft_memcmp(s1, s2, 1); 
+char s1[] = {0xFF}; // ASCII 255
+char s2[] = {0x01}; // ASCII 0
+ft_memcmp(s1, s2, 1); // will return 254
 
 // overlapping
 char arr[] = "aaaa";
-ft_memcmp(arr, arr + 1, 2);
+ft_memcmp(arr, arr + 1, 2); // will return 0
 ```
-SRC: https://github.com/lattera/glibc/blob/master/string/memcmp.c
+SRC: https://github.com/libressl/openbsd/blob/master/src/lib/libc/string/memcmp.c
 
 MAN: https://man.archlinux.org/man/memcmp.3 
