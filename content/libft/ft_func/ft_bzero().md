@@ -15,7 +15,8 @@ simply: just memset with 0's.
 
 // Why we are able to ignore return value of memset ?
 
-C allows to ignore any function's return value, bzero lets memset do the work and safely discards the pointer memset returns.
+C allows to ignore any function's return value, bzero lets memset do the work
+and safely discards the pointer memset returns.
 ``` 
 
 ```EDGE_CASES

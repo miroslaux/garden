@@ -12,7 +12,8 @@ Returns pointer to modified piece of memory.
 
 ```NOTES 
 // Cast the void pointer to an unsigned char pointer to work byte-by-byte
-### Dereference a `void *` pointer because the compiler doesn't know how large the data type is
+### Dereference a `void *` pointer because the compiler doesn't know how large
+the data type is
 
 // Cast the int to an unsigned char to isolate the lowest 8 bits
 // Loop through the memory and assign the value `n` times
