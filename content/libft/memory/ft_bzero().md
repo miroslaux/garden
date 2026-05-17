@@ -3,7 +3,7 @@
 void bzero(void *s, size_t n);
 ```
 DESCRIPTION:
-	`The bzero() function erases the data in the n bytes of the memory starting at the location pointed to by s, by writing zeros (bytes containing '\0') to that area.`
+	`The bzero() function erases the data in the n bytes of the memory starting at the location pointed to by s, by writing zeros (bytes containing '\0') to that area. It's just memset with 0's`
 
 RETURN VALUE:
 	None.
@@ -11,10 +11,7 @@ RETURN VALUE:
 #setting #zero #memory #libft
 
 ```NOTES 
-simply: just memset with 0's.
-
 // Why we are able to ignore return value of memset ?
-
 C allows to ignore any function's return value, bzero lets memset do the work
 and safely discards the pointer memset returns.
 ``` 
@@ -32,3 +29,5 @@ bzero(array + 5, 3);
 char *ptr = malloc(100);
 bzero(ptr, 100);
 ```
+SRC: https://github.com/bminor/glibc/blob/master/string/bzero.c
+MAN: https://man.archlinux.org/man/bzero.3

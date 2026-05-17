@@ -15,5 +15,11 @@ RETURN VALUE:
 ``` 
 
 ```EDGE_CASES
-
+// n == 0
+will return `NULL`
+// c == '\0'
+will return its memory address if it falls within the $n$ limit
+// Values outside the 0-255 range are truncated 
 ```
+SRC: https://github.com/lattera/glibc/blob/master/string/memchr.c
+MAN: https://man.archlinux.org/man/memchr.3

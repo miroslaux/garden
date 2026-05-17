@@ -26,3 +26,5 @@ RETURN VALUE:
 // integer overflow 
 If `count * size` exceeds the maximum value of `size_t` - it will return NULL. 
 ```
+SRC: https://github.com/gcc-mirror/gcc/blob/master/libiberty/calloc.c
+MAN: https://man.archlinux.org/man/calloc.3
