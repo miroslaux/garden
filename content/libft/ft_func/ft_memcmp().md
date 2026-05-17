@@ -11,7 +11,8 @@ The memcmp() function returns an integer less than, equal to, or greater than ze
 #compare #memory #libft
 
 ```NOTES 
-converting both memory areas to set's of pointers of unsigned chars and then returning difference or 0 if it's equal
+converting both memory areas to set's of pointers of unsigned chars and then
+returning difference or 0 if it's equal
 ``` 
 
 ```EDGE_CASES
@@ -25,5 +26,5 @@ ft_memcmp(s1, s2, 1);
 
 // overlapping
 char arr[] = "aaaa";
-int result = ft_memcmp(arr, arr + 1, 2);
+ft_memcmp(arr, arr + 1, 2);
 ```
