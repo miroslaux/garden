@@ -8,7 +8,7 @@ DESCRIPTION:
 RETURN VALUE:
 None.
 
-#writing #memory #libft
+#setting #zero #memory #libft
 
 ```NOTES 
 simply: just memset with 0's.
