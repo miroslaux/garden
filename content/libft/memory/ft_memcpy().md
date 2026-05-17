@@ -35,3 +35,6 @@ char *dest = &buffer[0]; // "0123..."
 memcpy(dest, src, 5); 
 
 ```
+SRC: https://github.com/lattera/glibc/blob/master/string/memcpy.c
+
+MAN: https://man.archlinux.org/man/core/man-pages/memcpy.3.en

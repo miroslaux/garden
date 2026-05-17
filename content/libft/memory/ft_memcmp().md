@@ -28,3 +28,6 @@ ft_memcmp(s1, s2, 1);
 char arr[] = "aaaa";
 ft_memcmp(arr, arr + 1, 2);
 ```
+SRC: https://github.com/lattera/glibc/blob/master/string/memcmp.c
+
+MAN: https://man.archlinux.org/man/memcmp.3 

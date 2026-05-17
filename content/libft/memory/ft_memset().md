@@ -37,3 +37,6 @@ ft_memset(str, 257, 4);
 
 it will not crash because compiler converts the `int` to an `unsigned char`, so memory will be filled with ASCII 1 value (SOH)
 ```
+SRC: https://github.com/lattera/glibc/blob/master/string/memset.c
+
+MAN: https://man.archlinux.org/man/memset.3

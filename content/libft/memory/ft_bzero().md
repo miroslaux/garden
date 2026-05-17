@@ -30,4 +30,5 @@ char *ptr = malloc(100);
 bzero(ptr, 100);
 ```
 SRC: https://github.com/bminor/glibc/blob/master/string/bzero.c
+
 MAN: https://man.archlinux.org/man/bzero.3

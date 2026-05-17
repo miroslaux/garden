@@ -39,6 +39,6 @@ char *dest = &buffer[0]; // "0123456789"
 
 memmove(buffer, buffer, 10) // Shifts data to the left safely
 ```
+SRC: https://github.com/lattera/glibc/blob/master/string/memmove.c
 
-
-
+MAN: https://man.archlinux.org/man/memmove.3
