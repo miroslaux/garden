@@ -8,7 +8,7 @@ DESCRIPTION:
 RETURN VALUE:
 The memmove() function returns a pointer to dest
 
-#c #c #libft
+#copy #memory #libft
 
 ```NOTES 
 // Handle the null pointer guard case for both src and dest
